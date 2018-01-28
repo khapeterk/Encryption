@@ -1,12 +1,12 @@
 function encrypt(input) {
   let result = ""
   if (input === "feedthedog") return "fto ehg ee dd"
-  result += input[0] + input[4] + input[8]
+  result += input[0] + input[0 + 4] + input[0 + 8]
   result += " "
-  result += input[1] + input[5] + input[9]
+  result += input[1] + input[1 + 4] + input[1 + 8]
   result += " "
-  result += input[2] + input[6] + input[10]
+  result += input[2] + input[2 + 4] + input[2 + 8]
   result += " "
-  result += input[3] + input[7] + input[11]
+  result += input[3] + input[3 + 4] + input[3 + 8]
   return result
 }

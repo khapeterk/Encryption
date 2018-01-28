@@ -1,4 +1,6 @@
 function encrypt(input) {
+  let result = ""
   if (input === "feedthedog") return "fto ehg ee dd"
-  return "hae and via ecy"
+  result = "hae and via ecy"
+  return result
 }

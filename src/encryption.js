@@ -5,7 +5,7 @@ function encrypt(input) {
   let result = ""
   if (input === "feedthedog") return "fto ehg ee dd"
   for(let rowIndex = 0; rowIndex < rows; rowIndex++) {
-    result += input[0 + rowIndex * 4]
+    result += input[0 + rowIndex * columns]
   }
   result += " "
   result += input[1 + 0 * 4]

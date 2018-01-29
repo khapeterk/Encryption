@@ -1,4 +1,7 @@
 function encrypt(input) {
+  length = input.length
+  rows = Math.floor(Math.sqrt(length))
+  columns = Math.ceil(Math.sqrt(length))
   let result = ""
   if (input === "feedthedog") return "fto ehg ee dd"
   result += input[0 + 0 * 4]

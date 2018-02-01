@@ -8,8 +8,9 @@ function encrypt(input) {
   for(let columnIndex = 0; columnIndex < columns; columnIndex++) {
     block = ""
     for(let rowIndex = 0; rowIndex < rows; rowIndex++) {
-      if (columnIndex + rowIndex * columns < length) {
-        block += input[columnIndex + rowIndex * columns]
+      let stringIndex = columnIndex + rowIndex * columns
+      if (stringIndex < length) {
+        block += input[stringIndex]
       }
     }
     result.push(block)  

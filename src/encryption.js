@@ -4,7 +4,6 @@ function encrypt(input) {
   columns = Math.ceil(Math.sqrt(length))
   let result = []
   let block
-  if (input === "feedthedog") return "fto ehg ee dd"
 
   for(let columnIndex = 0; columnIndex < columns; columnIndex++) {
     block = ""

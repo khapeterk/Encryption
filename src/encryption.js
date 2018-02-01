@@ -2,6 +2,7 @@ function encrypt(input) {
   length = input.length
   rows = Math.floor(Math.sqrt(length))
   columns = Math.ceil(Math.sqrt(length))
+  if (rows * columns < length) rows++
   let result = []
   let block
 

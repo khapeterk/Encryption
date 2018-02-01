@@ -6,29 +6,13 @@ function encrypt(input) {
   let block
   if (input === "feedthedog") return "fto ehg ee dd"
 
-  block = ""
-  for(let rowIndex = 0; rowIndex < rows; rowIndex++) {
-    block += input[0 + rowIndex * columns]
+  for(let columnIndex = 0; columnIndex < columns; columnIndex++) {
+    block = ""
+    for(let rowIndex = 0; rowIndex < rows; rowIndex++) {
+      block += input[columnIndex + rowIndex * columns]
+    }
+    result.push(block)  
   }
-  result.push(block)
-
-  block = ""
-  for(let rowIndex = 0; rowIndex < rows; rowIndex++) {
-    block += input[1 + rowIndex * columns]
-  }
-  result.push(block)
-
-  block = ""
-  for(let rowIndex = 0; rowIndex < rows; rowIndex++) {
-    block += input[2 + rowIndex * columns]
-  }
-  result.push(block)
-
-  block = ""
-  for(let rowIndex = 0; rowIndex < rows; rowIndex++) {
-    block += input[3 + rowIndex * columns]
-  }
-  result.push(block)
 
   return result.join(" ")
 }
